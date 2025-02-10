@@ -1,0 +1,495 @@
+#flag {
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #b5a3c6 !important;
+}
+
+#watch-container {
+    width: 100%;
+    height: 100vh;
+    /* Prend toute la hauteur de l'écran */
+    overflow: hidden;
+    position: relative;
+}
+
+.watch-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Remplit la section sans déformation */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.watch-image.active {
+    opacity: 1;
+}
+
+/* ------------------------ */
+
+/* première party en grand ecran */
+#slide-container {
+    width: 50%;
+    height: 100vh;
+    /* Prend toute la hauteur de l'écran */
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-image {
+    object-fit: cover;
+    /* Remplit la section sans déformation */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide-image.active {
+    opacity: 1;
+}
+
+/* seconde party en petit ecran */
+#slide-container2 {
+    width: 100%;
+    height: 100vh;
+    /* Prend toute la hauteur de l'écran */
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-image2 {
+    object-fit: cover;
+    /* Remplit la section sans déformation */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide-image2.active {
+    opacity: 1;
+}
+
+.slide-image3 {
+    object-fit: contain;
+    /* Remplit la section sans déformation */
+    position: absolute;
+    width: 35%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide-image3.active {
+    opacity: 1;
+}
+
+  /* Réduire l'espacement entre les titres */
+  h2.texte, h3.texte, h4.texte {
+    margin: 0;         /* Supprime les marges par défaut */
+    margin-bottom: 10px; /* Ajustez cette valeur selon vos préférences */
+  }
+  
+/* ############### */
+.archivo {
+    font-family: "Archivo", serif !important;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.Stigsa{
+    font-family: 'Stigsa';
+}
+
+@font-face {
+    font-family: 'Stigsa';
+    /* Nom de la police (utilisé dans font-family) */
+    src: url('fonts/Stigsa-Regular.woff2') format('woff2'),
+        /* Chemin du fichier WOFF2 */
+        url('fonts/Stigsa-Regular.woff') format('woff'),
+        /* Chemin du fichier WOFF */
+        url('fonts/Stigsa-Regular.ttf') format('truetype');
+    /* Fallback pour TTF */
+    font-weight: normal;
+    /* Poids de la police */
+    font-style: normal;
+    /* Style de la police */
+}
+
+
+.rectangle {
+    position: relative;
+    background-color: #d5d5d5 !important;
+    margin: 0;
+    padding: 0;
+}
+
+.manufacture {
+    left: -26%;
+}
+
+
+.text-linear {
+    display: inline-block;
+    background: rgb(230, 230, 230);
+    background: linear-gradient(130deg, rgb(234, 221, 255) 0%, rgb(73, 61, 85) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-radial {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background: radial-gradient(circle, rgba(158, 137, 178), rgba(158, 137, 178, 0.4));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.text-sansSerif {
+    font-family: sans-serif;
+}
+
+.bg-custom {
+    background-color: rgb(0, 0, 0);
+}
+
+.bg-custom2 {
+    background-image: url(../images/cardsMontre/shutWhiteBG.svg);
+    background-color: #ffffffb1;
+}
+
+/* ref */
+.fs-99 {
+    font-size: 15px;
+    font-weight: 100 !important;
+    color: #3A0F48 !important;
+    opacity: 40%;
+}
+
+/* wristmaster */
+.fs-98 {
+    font-size: 24px;
+    font-weight: 600 !important;
+    color: #0A080F !important;
+}
+
+/* grande complication */
+.fs-97 {
+    font-size: 20px;
+    font-weight: 300 !important;
+    color: #0A080F !important;
+}
+
+/* 44mm, cadran ceramique bleu */
+.fs-96 {
+    font-size: 14px;
+    font-weight: 300 !important;
+    color: #0A080F !important;
+    opacity: 60%;
+}
+
+.fs-95 {
+    font-size: 15px;
+    font-weight: 300 !important;
+    color: #5D1F75 !important;
+}
+
+.fs-94{
+    font-size: 15px;
+    font-weight: 100 !important;
+    color: #E6E6E6 !important;
+    opacity: 60%;
+}
+
+.fs-93{
+    font-size: 25px;
+    font-weight: 200 !important;
+    color: #E6E6E6 !important;
+}
+
+/* titre yema wristmaster */
+.fs-92{
+    font-size: 90px;
+    letter-spacing: 5px;
+    font-weight: 300 !important;
+    font-family: 'Stigsa';
+}
+
+.fs-91{
+    font-family: 'archivo' !important;
+    font-size: 20px !important;
+    font-weight: 300 !important;
+}
+
+.fs-90{
+    font-size: 5em;
+    font-weight: 100 !important;
+    font-family: 'Stigsa'!important;
+    background: linear-gradient(130deg, rgb(234, 221, 255) 0%, rgb(73, 61, 85) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    padding: 0;
+}
+
+.fs-89{
+    font-size: 1em;
+    font-family: sans-serif;
+    background: linear-gradient(130deg, rgb(234, 221, 255) 0%, rgb(73, 61, 85) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    padding: 0;
+
+}
+
+.fs-80{
+    font-family: 'Stigsa', serif;
+    font-size: 70px !important;
+    font-weight: 100 !important;
+}
+
+.card {
+    background-color: transparent;
+}
+
+.hover:hover {
+    color: #E6E6E6 !important;
+    background: radial-gradient(#973CBA, #62207B);
+}
+
+.hover {
+    color: #E6E6E6;
+    background: radial-gradient(#63207b9d, #963cba9e);
+}
+
+.hover-preco:hover {
+    color: #E6E6E6 !important;
+    background: radial-gradient(#973CBA, #62207B);
+}
+
+.hover-preco {
+    color: #E6E6E6;
+
+}
+
+section {
+    margin: 30% 0;
+}
+
+.finitions{
+    position: relative;
+    margin: 0 0 90% 0;
+    padding: 0;
+
+}
+
+.finitions h1, .finitions h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.finitions img{
+    position: absolute;
+    top: 10%;
+}
+
+.section-mb {
+    margin-bottom: 30%;
+}
+
+.wh-test {
+    height: 300px;
+    width: 260px;
+    object-fit: cover !important;
+}
+
+/* css swiper */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: white;
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+}
+/* separateur---------------------- */
+.separator {
+    width: 50%;
+    /* Ajuste la largeur selon ton besoin */
+    height: 4px;
+    /* Épaisseur du séparateur */
+    margin: 60px auto;
+    /* Centre le séparateur */
+    background: linear-gradient(to right, black, #d0b7d1, black);
+    border-radius: 5px;
+    /* Arrondi les bords si besoin */
+}
+
+.separator2 {
+    width: 100%;
+    /* Ajuste la largeur */
+    height: 12px;
+    /* Ajuste la hauteur */
+    background: repeating-linear-gradient(-45deg,
+            black 0px,
+            black 5px,
+            white 5px,
+            white 9px);
+    margin: 20px auto;
+    /* Centrage horizontal */
+}
+
+.separator3 {
+    opacity: .3;
+    width: 100%;
+    /* Ajuste la largeur selon ton besoin */
+    height: 1px;
+    /* Épaisseur du séparateur */
+    margin: 60px auto;
+    /* Centre le séparateur */
+    background: linear-gradient(to right, black, #d0b7d1, black);
+    border-radius: 5px;
+    /* Arrondi les bords si besoin */
+}
+
+.separator4 {
+    width: 35%;
+    /* Ajuste la largeur selon ton besoin */
+    height: 4px;
+    /* Épaisseur du séparateur */
+    margin: 60px auto;
+    /* Centre le séparateur */
+    background: linear-gradient(to right, black, #ffffff, black);
+    border-radius: 5px;
+    /* Arrondi les bords si besoin */
+}
+
+.text-divider {
+    --text-divider-gap:1rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+}
+
+.text-divider::before, .text-divider::after{
+    content: '';
+    height: 1px;
+    flex-grow: 1;
+}
+
+.text-divider::before{
+    margin-right: var(--text-divider-gap);
+    background: linear-gradient(to right, #9e89b200, #9E89B2);
+
+}
+
+.text-divider::after{
+    margin-left: var(--text-divider-gap);
+    background: linear-gradient(to right, #9E89B2, #9e89b200);
+
+}
+/* --------------------------------- */
+
+.texte {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.texte.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.arc {
+    position: relative;
+    display: inline-block;
+    /* Pour s'adapter au contenu */
+}
+
+.arc-bg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.arc-text {
+    position: absolute;
+    top: 20%;
+}
+
+input[type=email]::placeholder{
+    opacity: .3;
+    color: #E6E6E6;
+}
+
+#intro-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#video-intro{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    justify-content: center;
+    z-index: -1;
+}

@@ -1,0 +1,13 @@
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-rounded: false;
+$enable-shadows: true;
+
+// color change
+$primary: #9e89b2;
+$secondary: #0A080F;
+$success: #3A0F4B;
+$danger: #682383;
+$white: #E6E6E6;
+$warning: #5D1F75;
+// Quick fix for Bootstrap V5.1.1 issue
+$zindex-offcanvas: 1051;

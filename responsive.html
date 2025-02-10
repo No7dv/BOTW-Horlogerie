@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YEMA - Wristmaster</title>
+
+    <!-- Site fait avec Bootstrap 5 et JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- font Archivo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- SASS compilate to CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- css bs5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- JS BS5 fontAwsome -->
+    <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- fond noir -->
+
+<body class="bg-custom">
+
+
+    <!-- section navbar -->
+    <header id="toTop" class="m-0 p-0 Archivo pb-5">
+        <div class="container d-none d-lg-block pt-2">
+
+
+            <!-- balise alert de BS5 pour le bandeau au top de la page -->
+            <div class="alert alert-primary text-success mb-md-3 py-md-2 px-md-3 rounded-3 d-flex justify-content-between align-items-center"
+                role="alert">
+                <div>
+                    <span>Précommander votre montre YEMA Wristmaster en soutenant notre Kickstarter ! </span>
+                    <a target="_blank" href="https://www.kickstarter.com/projects/yemawatches/yema-wristmaster-micro-rotor-limited-edition" class="text-success d-inline ms-2">En savoir plus</a>
+                </div>
+                <button type="button" data-bs-dismiss="alert" class="btn-close" aria-label="Close"></button>
+            </div>
+        </div>
+
+
+
+        <nav class="navbar navbar-expand-lg bg-secondary border-bottom border-md-1 border-white border-opacity-25 border-0">
+            <div class="container-lg">
+
+                <!-- logo de la marque -->
+                <a class="navbar-brand" href="responsive.html"><img class="img-fluid w-100" src="images/Logo.svg" alt="Logo Yuma"></a>
+
+                <!-- bouton trigger sur les écrans de taille moyen et petit -->
+                <button class="navbar-toggler bg-primary bg-gradient rounded-1" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+                    <!-- le text-end, sert pour les écrans moyen et petit, permet d'avoir le texte à droite -->
+                    <ul class="navbar-nav text-end">
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#finitions">Finitions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#lunette">Lunette</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#calibre">Calibre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#mouvement">Mouvement</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#bracelet">Bracelet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#luminova">Super-Luminova</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex justify-content-end py-4">
+                        <img id="flag" class="img-fluid" src="images/France.svg" alt="France">
+                    </div>
+                    <!-- cette partie est le bouton de soutien -->
+                    <div class="ms-lg-4 align-items-center text-center">
+                        <a target="_blank" class="nav-link p-2 hover rounded-3" href="https://www.kickstarter.com/projects/yemawatches/yema-wristmaster-micro-rotor-limited-edition">Soutenir le projet
+                            <i class="ps-3 bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- vidéo d'intro, muted obliger sinon la vidéo ne se lance pas ! -->
+    <div id="intro-container">
+        <div class="container-fluid">
+            <video class="w-100 w-md-0" id="videoIntro" autoplay muted loop src="images/intro.mp4"></video>
+            <div class="separator3 m-0 p-1"></div>
+        </div>
+    </div>
+
+
+   
+    
+
+
+    <section class="mb-0 pb-5">
+        <div class="container text-linear d-flex">
+            <div class="text-center justify-content-center align-items-center w-100">
+                <h4 class="fs-91 text-divider">L'excellence de l'horlogerie Franco-Suisse</h4>
+                <h1 class="fs-92 py-3 py-md-5">YEMA Wristmaster</h1>
+                <h3 class="fs-3 text-sansSerif">Inspiré des garde-temps emblématiques YEMA</h3>
+                <h3 class="fs-3 text-sansSerif">Wristmaster des années 60, ce modèle unique est équipé</h3>
+                <h3 class="fs-3 text-sansSerif">du premier calibre ultra-plat à micro-rotor.</h3>
+                <div class="separator3"></div>
+                <img class="w-sm-100" src="images/montre-intro.webp" alt="...">
+                <div class="separator4 my-1 py-0"></div>
+            </div>
+        </div>
+    </section>
+
+<!-- FINITION -->
+    <section id="finitions" class="finitions py-5 mt-5">
+        <div class="container-fluid text-center m-0 p-0">
+                <h1 class="fs-80 text-linear">Les finitions</h1>
+                <h2 class="fs-80 text-linear">main raffinées</h2>
+                <h4 class="fs-95 text-linear pb-5 pb-md-0 mb-5 mb-md-0">Polies, et satinées, mettent en valeur les lignes esthètiques</h4>
+            <div class="justify-content-center d-flex">
+                <img class="w-100 pt-5 pt-md-0 mt-5 mt-md-0" src="images/Finitions.svg" alt="...">
+            </div>
+        </div>
+    </section>
+
+<!-- LUNETTE -->
+    <section id="lunette" class="m-0 p-0">
+        <div class="container-fluid text-center">
+            <h2 data-aos="fade-up" class="texte fs-90">Lunette en verre saphir,</h2>
+            <h3 data-aos="fade-up" class="texte fs-90">traitement anti-reflets</h3>
+            <h4 data-aos="fade-up" class="texte fs-90">& couronne visée en acier</h4>
+            <p data-aos="fade-up" class="texte fs-89">
+                Le cadran arbore un striage incurvé ainsi qu'un léger dégradé révélé par la pleine lumière<br>
+                qui lui confèrent un esthétique à la fois puissant et subtil en harmonie<br>
+                avec l'éclat du polissage de la lunette et de l'acier du boitier.
+            </p>
+                <img class="d-flex justify-content-center align-items-center w-100" src="images/black.svg" alt="...">
+        </div>
+    </section>
+
+<!-- CALIBRE -->
+    <!-- section vidéo calibre manufacture à gauche et liste à puces à droite -->
+    <section id="calibre" class="rectangle">
+        <div class="separator2 m-0 p-0"></div>
+        <div class="container-fluid text-success py-5">
+
+
+            <!-- une ligne avec les colonnes -->
+            <div class="row">
+                <div class="col-12 col-md-7">
+
+                    <video autoplay loop muted class="w-100 img-fluid"
+                        src="images/video-manufacture.mp4"></video>
+                </div>
+
+
+                <div class="col-12 col-md-4">
+
+                    <h1 class="fs-1 fw-light">
+                        Calibre manufacture
+                    </h1>
+
+                    <h3 class="pb-4 fw-light fs-5">
+                        Conçu et fabriqué par YEMA dans ses <span class="fw-bold">ateliers
+                            de Morteau</span> (France), <span class="fw-bold">mouvement mécanique
+                            à remontage automatique :</span>
+                    </h3>
+
+                    <ul class="fs-5">
+                        <li>
+                            épaisseur 3.70mm, 33 rubis, balancier Glucydur
+                        </li>
+                        <li>
+                            28 800 A/h (4 Hz), 70h de réserve de marche
+                        </li>
+                        <li>
+                            190 micro-composants
+                        </li>
+                        <li>
+                            Masse oscillante micro-rotor en alliage de Tungstène
+                        </li>
+                        <li>
+                            Réglé sur 4 positions
+                        </li>
+                        <li>
+                            <span class="fw-bold">Amplitude 51.0</span>, ⌀ 32.20mm / 14.2 lignes
+                        </li>
+                    </ul>
+
+                    <h3 class="pt-4 fs-5">
+                        Finition <span class="fw-bold">micro-billage satiné et poli</span> avec décoration ALD (Atomic
+                        Layer Deposition) en 3 couleurs distinctes.
+                    </h3>
+
+                    <h3 class="fw-bold fs-5 pt-4">
+                        Garantie internationale de 3 ans.
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+        <div class="separator2"></div>
+    </section>
+
+
+
+
+    <!-- section arrièe de la montre en gros plan, changement de couleur de noir à vert à bleu -->
+    <div class="mt-0 pt-0" id="watch-container">
+        <div class="container-fluid">
+
+            <img class="img-fluid watch-image active" src="images/black-verso.svg"
+                alt="image de l'arrière de la montre noir">
+
+            <img class="img-fluid watch-image" src="images/Green-verso.svg" alt="image de l'arrière de la montre vert">
+
+            <img class="img-fluid watch-image" src="images/Blue-verso.svg" alt="image de l'arrière de la montre bleu">
+
+        </div>
+    </div>
+
+
+
+
+    <!-- section manufacture (montre à gauche, texte à droite) -->
+
+    <!-- pour faire brief, les images suivantes ont 3 classes importantes. -->
+    <!-- la balise avec la classe active sera mise au premier plan (opacité 1) et celles qui ne l'ont pas seront en opacité 0. -->
+    <!-- la classe slide-image permet d'avoir une transition d'opacité 0 à 1 et inversement -->
+    <!-- la classe manufacture, elle sert uniquement à positionner correctement l'image-->
+
+    <!-- MOUVEMENT -->
+    <div id="mouvement">
+        <div class="container-fluid pt-md-5 mt-md-5 pt-3 mt-3">
+
+            <div class="row">
+
+                <div class="col-12 col-md-6 d-none d-md-block" id="slide-container">
+                    <img class="w-100 slide-image active img-fluid manufacture" src="images/arrieremontrenoir.svg"
+                        alt="...">
+
+                    <img class="w-100 slide-image img-fluid manufacture" src="images/arrieremontrevert.svg" alt="...">
+
+                    <img class="w-100 slide-image img-fluid manufacture" src="images/arrieremontrebleu.svg" alt="...">
+                </div>
+
+                <div class="col-12 col-md-6 d-block d-md-none pt-5 mt-5" id="slide-container2">
+                    <img class="w-100 slide-image2 active img-fluid" src="images/arrieremontrenoir.svg" alt="...">
+
+                    <img class="w-100 slide-image2 img-fluid" src="images/arrieremontrevert.svg" alt="...">
+
+                    <img class="w-100 slide-image2 img-fluid" src="images/arrieremontrebleu.svg" alt="...">
+                </div>
+
+                <div class="col-12 col-md-5">
+                    <img class="w-100 px-1 img-fluid" src="images/bloctextcol.svg" alt="bloc text droite">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+<!-- BRACELET -->
+    <!-- section double card bracelet -->
+    <section id="bracelet" class="arc">
+        <img class="arc-bg w-100 img-fluid" src="images/arc-violette-bleu.svg" alt="...">
+
+        <div class="d-flex justify-content-center align-items-center">
+            <h1 class="arc-text text-linear stigsa fw-light pb-5 mb-5 text-center display-1">
+                Bracelet intégré<br>
+                & Boucle déployante
+                <dl class="separator my-5 w-100"></dl>
+            </h1>
+        </div>
+
+        <div class="container-fluid d-flex justify-content-center align-items-center pt-md-0 mt-md-0 pt-5 mt-5">
+
+            <div class="row gx-md-5">
+                <div class="col-12 col-md-6">
+                    <img class="img-fluid pt-5 mt-5 pt-md-0 mt-md-0" src="images/Card-2.svg" alt="...">
+                </div>
+
+                <div class="col-12 col-md-6 pt-5 pt-md-0">
+                    <img class="img-fluid" src="images/Card-3.svg" alt="...">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- SUPER LUMINOVA -->
+    <!-- section aiguilles luminova -->
+    <section id="luminova" class="m-0 p-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h1 class="stigsa fw-light display-1 text-linear">Aiguilles<br>
+                        Super-Luminova</h1>
+                    <h3 class="stigsa fw-light fs-4 text-linear">Les aiguilles et les index sont traités en
+                        Super-Luminova BGW9 Grade A afin d'offrir une parfaite lisibilité dans des conditions
+                        de faible luminosité</h3>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img class="img-fluid slide-image3 mb-5 pb-5 pb-md-0 mb-md-0 active"
+                        src="images/super-luminovaOff.svg" alt="...">
+                    <img class="img-fluid slide-image3 mb-5 mb-md-0" src="images/super-luminovaOn.svg"
+                        alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section vidéo -->
+    <section>
+        <div class="container-fluid text-center">
+            <video data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom" autoplay
+                loop muted class="w-75 img-fluid rounded-3 pt-5 pt-md-0 mt-5 mt-md-0" src="images/videoBlue.mp4"></video>
+
+            <div class="offcanvas offcanvas-bottom h-100 bg-custom" tabindex="-1" id="offcanvasBottom"
+                aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small">
+                    <video autoplay loop muted class="w-100 img-fluid rounded-3" src="images/videoBlue.mp4"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section carousel -->
+    <section class="section-mb">
+        <div class="container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="rounded-5" src="images/img-carousel/slide1.svg" alt="...">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="rounded-5" src="images/img-carousel/slide2.svg" alt="...">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="rounded-5" src="images/img-carousel/slide3.svg" alt="...">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="rounded-5" src="images/img-carousel/slide4.svg" alt="...">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="rounded-5" src="images/img-carousel/slide5.svg" alt="...">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="rounded-5" src="images/img-carousel/slide6.svg" alt="...">
+                    </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+                <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+            </div>
+        </div>
+        <div class="separator3"></div>
+
+    </section>
+
+
+    <!-- section 3 cards montres -->
+    <section class="archivo">
+        <div class="container mx-5 text-center">
+            <h1 class="display-2 text-linear">Précommander la collection <br>YEMA Wristmaster</h1>
+            <h3 class="fs-5 text-radial">
+                Cette édition collector est limitée à 1 948 exemplaires<br>
+                et présente 3 couleurs de cadran distinctes assorties au calibre du micro-rotor.<br>
+                Toutes les masses oscillantes sont gravées d'un numéro unique.
+            </h3>
+        </div>
+
+        <div class="container mt-5 rounded-4 justify-content-center align-items-center d-flex">
+            <div class="row bg-custom2 p-5 rounded-5">
+
+                <div class="col-12 col-md-4 text-sansSerif">
+                    <div class="card border-0 text-center w-custom align-items-center">
+                        <img src="images/cardsMontre/cardblack.svg" class=" wh-test rounded-3 card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fs-99">Ref. 26605CB.OO.1248CB.01</h5>
+                            <h3 class="fs-98">Wristmaster</h3>
+                            <h4 class="fs-97">Grande Complication</h4>
+                            <p class="card-text  fs-96">44mm, Cadran Céramique Black</p>
+                            <a href="#"
+                                class="btn hover-preco border-warning rounded-3 border-2 fs-95 mt-2">Précommander YEMA
+                                Black</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 text-sansSerif">
+                    <div class="card border-0 text-center w-custom align-items-center">
+                        <img src="images/cardsMontre/cardBlue.svg" class=" wh-test rounded-3 card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fs-99">Ref. 26605CB.OO.1248CE.01</h5>
+                            <h3 class="fs-98">Wristmaster</h3>
+                            <h4 class="fs-97">Grande Complication</h4>
+                            <p class="card-text fs-96">44mm, Cadran Céramique Blue</p>
+                            <a href="#"
+                                class="btn hover-preco border-warning rounded-3 border-2 fs-95 mt-2">Précommander YEMA
+                                Blue</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 text-sansSerif">
+                    <div class="card border-0 text-center w-custom align-items-center">
+                        <img src="images/cardsMontre/cardGreen.svg" class=" wh-test rounded-3 card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fs-99">Ref. 26605CB.OO.1248CG.01</h5>
+                            <h3 class="fs-98">Wristmaster</h3>
+                            <h4 class="fs-97">Grande Complication</h4>
+                            <p class="card-text fs-96">44mm, Cadran Céramique Green</p>
+                            <a href="#"
+                                class="btn hover-preco border-warning rounded-3 border-2 fs-95 mt-2">Précommander YEMA
+                                Green</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white text-sansSerif fw-light my-5 py-5">
+        <div class="container">
+            <form action="">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h3 class="fs-93">Rejoins la Newsletter</h3>
+                        <h4 class="fs-94 text-opacity-50">tenez-vous au courant de tout</h4>
+                        <a href="#" title="linkedin" alt="réseaux sociaux"><i class="bi bi-linkedin p-0 p-md-1"></i></a>
+                        <a href="#" title="instagram" alt="réseaux sociaux"><i class="bi bi-instagram"></i></a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="justify-content-center align-items-center d-flex">
+                            <input class="form-control bg-custom text-white rounded-3 border-opacity-50 border-white w-50" type="email" placeholder="Entrez votre e-mail">
+                            <button type="button" class="text-white bg-dark border-0 rounded-3 p-2 ms-4">S'inscrire</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+                <div class="separator3"></div>
+                <div class="text-end fs-1 text-primary">
+                    <a href="#toTop">
+                    <i class="bi bi-arrow-up-circle"></i>
+                    </a>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12 col-md-4">
+                        <h4 class="fs-94"><span type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Mentions
+                            légales</span> . Conditons générales</h4>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="images/Logo.svg" alt="Logo YEMA">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h4 class="fs-94">Maquette par Virgile - Site par No7</h4>
+                    </div>
+                </div>
+
+
+                
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">MENTIONS LÉGALES</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nostrum consequatur
+                    tempora quam quo tempore veritatis reiciendis error quia illum?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        </script>
+        <script> AOS.init({
+            duration:500,
+            delay:1,
+        }); </script>
+</body>
+
+</html>
